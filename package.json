@@ -1,0 +1,22 @@
+{
+  "name": "saldo.io",
+  "version": "1.0.0",
+  "description": "saldo.io: An Ionic project",
+  "dependencies": {
+    "balance-api-skanetrafiken": "^0.1.0",
+    "gulp": "^3.5.6",
+    "gulp-concat": "^2.2.0",
+    "gulp-minify-css": "^0.3.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-sass": "^0.7.1"
+  },
+  "devDependencies": {
+    "bower": "^1.3.3",
+    "browserify": "^9.0.3",
+    "gulp-util": "^2.2.14",
+    "shelljs": "^0.3.0"
+  },
+  "scripts": {
+    "bundle-external": "./node_modules/.bin/browserify -r balance-api-skanetrafiken -r ./credentials.json > www/js/bundle.js"
+  }
+}
